@@ -21,6 +21,7 @@
     <meta name="robots" content="index, follow">
     <!-- set the preview image of the page -->
     <meta property="og:image" content="img/fyoli-logo.png">
+    <!-- some javascript to handle email obfuscation -->
   </head>
   <body>
     <header>
@@ -48,8 +49,16 @@
 	  <li><a href="https://www.instagram.com/fyoli_foods/" target="_blank">instagram</a></li>
 	</ul>
 	<li><a href="https://fyoli-165967.square.site">digital storefront</a></li>
+	<li><a id="contact">send us an email!</a></li>
       </ul>
     </nav>
+    <script type="text/javascript">
+      var encEmail = "Y29udGFjdEBmeW9saS5jYQ==";
+      const form = document.getElementById("contact");
+      form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+    </script>
+
+    
     <hr>
 
     <h2 class="about-header" id="about-us">about us</h2>
