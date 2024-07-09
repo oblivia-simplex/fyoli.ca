@@ -193,6 +193,11 @@ h2 {
 .treat-image {
     width: 80%;
     margin: auto;
+    /* centre it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .toc {
